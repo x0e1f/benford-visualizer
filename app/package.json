@@ -1,0 +1,14 @@
+{
+  "name": "benford_visualizer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "author": "x0e1f <Davide Pataracchia>",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "bootstrap": "^4.6.0",
+    "chart.js": "^2.9.4",
+    "jquery": "^3.5.1"
+  }
+}

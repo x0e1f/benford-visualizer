@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="eng">
+
+<head>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/chart.js/dist/Chart.bundle.min.js">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/chart.js/dist/Chart.bundle.min.js"></script>
+    <script src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+
+    <script src="assets/js/benford.js"></script>
+    <title>Benford Visualizer</title>
+</head>
+
+<body>
+    <header>
+        <h2>Benford's Law <span>Visualizer</span></h2>
+        <p><i class="fas fa-bars"></i> Test Benford's Law on the fly</p>
+    </header>
+
+    <div class="main-container">
+        <div class="row h-100">
+            <div class="col-md-6">
+                <textarea id="benford-text-area" class="benford-input" oninput="getDistr()"></textarea>
+            </div>
+            <div class="col-md-6">
+                <canvas id="benfChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <i class="fab fa-wikipedia-w"></i> <a href="https://en.wikipedia.org/wiki/Benford%27s_law"
+                target="blank">Benford's Law</a>&nbsp;&nbsp;
+            <i class="fas fa-balance-scale-right"></i> <a href="https://en.wikipedia.org/wiki/MIT_License"
+                target="blank">MIT License</a>&nbsp;&nbsp;
+            <i class="fab fa-github"></i> <a href="https://github.com/x0e1f" target="blank">x0e1f</a>
+        </div>
+    </footer>
+
+    <script>
+        Module['onRuntimeInitialized'] = function () {
+            document.getElementById("benford-text-area").innerHTML = example;
+            getDistr();
+        }              
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
