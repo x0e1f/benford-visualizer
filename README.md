@@ -2,7 +2,8 @@
 
 ![Project header](header.png)
 
-Since I first came accross the Benford's Law I began to be really curious in testing any datasets I can think of against it. For this reason and due to the fact that i wanted to test webassembly with c++ and emscripten I did this simple project. In order to use benford-visualizer just run the docker image and open a browser on http://localhost:8080, you will be able to modify the dataset in any way you want and see the chart updating in real time.
+Since I first discovered Benford's Law, I began to be really curious in testing any datasets I can think of against it. 
+For this reason, and due to the fact that I wanted to test (for my first time) webassembly with C++ and Emscripten, I did this simple project. In order to use benford-visualizer just run the docker image, you will be able to edit the dataset and see the chart updating in real time.
 
 ## Running with Docker
 Build docker image
